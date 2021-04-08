@@ -195,9 +195,9 @@ export class FoodOrderScreen extends React.Component {
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <View style={{ marginTop: 10, marginBottom: 10 }}>
-                            <Text style={{ fontFamily: 'Kanit-Bold', fontSize: 25, marginLeft: 10 }}>ข้าวผัด</Text>
+                            <Text style={{ fontFamily: 'Kanit-Bold', fontSize: 25, marginLeft: 10 }}>ข้าวกะเพราหมูสับ</Text>
                             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                                <Ionicons name='ios-restaurant' size={18} />
+                                {/* <Ionicons name='ios-restaurant' size={18} /> */}
                                 <Text style={{ fontFamily: 'Kanit-Regular' }}>ร้านสตางค์ อาหารตามสั่ง</Text>
                             </View>
                         </View>
@@ -221,7 +221,7 @@ export class FoodOrderScreen extends React.Component {
                     <TouchableOpacity style={styles.quantityBtn} onPress={() => { this.removeQuantity() }}>
                         <Ionicons name='remove-outline' size={30} style={styles.iconDetail} />
                     </TouchableOpacity>
-                    <TouchableOpacity style={[styles.orderBtn]}>
+                    <TouchableOpacity style={[styles.orderBtn]} >
                         <Text style={{ fontFamily: 'Kanit-Regular' }}>เพิ่มไปยังตะกร้า x {this.state.quantity}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.quantityBtn} onPress={() => { this.addQuantity() }}>

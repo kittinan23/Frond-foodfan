@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
-import {data} from '../model/datafood';
+import {data} from '../model/data';
 import Card from '../components/Card';
 
-const CardListScreen = ({navigation}) => {
+const CardOrderDetails = ({navigation}) => {
 
     const renderItem = ({item}) => {
         return (
@@ -26,7 +26,7 @@ const CardListScreen = ({navigation}) => {
     );
 };
 
-export default CardListScreen;
+export default CardOrderDetails;
 
 const styles = StyleSheet.create({
   container: {

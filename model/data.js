@@ -11,14 +11,14 @@ export const data = [
     {
       id: '1',
       coordinate: {
-        latitude: 22.6293867,
-        longitude: 88.4354486,
+        latitude: 22.6292757,
+        longitude: 88.444781,
       },
-      title: 'ชาเด็กช่าง',
+      title: 'ร้านชาคุมะ',
       description: `ภายใน 30 นาที`,
-      image: Images[5].image,
+      image: Images[4].image,
       rating: 4,
-      reviews: 99,
+      reviews: 178,
       categories: ['Restaurant'],
     }
     ,
@@ -64,14 +64,14 @@ export const data = [
   {
     id: '5',
     coordinate: {
-      latitude: 22.6292757,
-      longitude: 88.444781,
+      latitude: 22.6293867,
+      longitude: 88.4354486,
     },
-    title: 'ชาคุมะ',
+    title: 'ชาเด็กช่าง',
     description: `ภายใน 30 นาที`,
-    image: Images[4].image,
+    image: Images[5].image,
     rating: 4,
-    reviews: 178,
+    reviews: 99,
     categories: ['Restaurant'],
   },
   {

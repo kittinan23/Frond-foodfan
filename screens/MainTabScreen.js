@@ -8,7 +8,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import HomeScreen from './HomeScreen';
 import NotificationScreen from './NotificationScreen';
-import ExploreScreen from './ExploreScreen';
+import OrderScreen from './ExploreScreen';
 import ProfileScreen from './ProfileScreen';
 import MapTestScreen from './MapTestScreen';
 import EditProfileScreen from './EditProfileScreen';
@@ -18,7 +18,9 @@ import {View} from 'react-native-animatable';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import CardListScreen from './CardListScreen';
 import CardItemDetails from './CardItemDetails';
+import CardOrderDetails from './CardOrderDetails';
 import { FoodOrderScreen } from './FoodOrderScreen';
+import ExploreScreen from './ExploreScreen';
 
 const HomeStack = createStackNavigator();
 const NotificationStack = createStackNavigator();
@@ -39,7 +41,7 @@ const MainTabScreen = () => (
         ),
       }}
     />
-    <Tab.Screen
+    {/* <Tab.Screen
       name="Notifications"
       component={NotificationStackScreen}
       options={{
@@ -49,12 +51,12 @@ const MainTabScreen = () => (
           <Icon name="ios-notifications" color={color} size={26} />
         ),
       }}
-    />
+    /> */}
     <Tab.Screen
-      name="Explore"
+      name="Order"
       component={ExploreScreen}
       options={{
-        tabBarLabel: 'Explore',
+        tabBarLabel: 'Order',
         tabBarColor: '#FF6347',
         tabBarIcon: ({color}) => (
           <Icon name="ios-aperture" color={color} size={26} />
@@ -145,6 +147,17 @@ const HomeStackScreen = ({navigation}) => {
       <HomeStack.Screen 
         name="CardItemDetails"
         component={CardItemDetails}
+        options={({route}) => ({
+          // title: route.params.title,
+          headerBackTitleVisible: false,
+          headerTitle: false,
+          headerTransparent: true,
+          headerTintColor: '#fff'
+        })}
+      />
+      <HomeStack.Screen 
+        name="CardOrderDetails"
+        component={FoodOrderScreen}
         options={({route}) => ({
           // title: route.params.title,
           headerBackTitleVisible: false,
