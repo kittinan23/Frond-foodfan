@@ -9,7 +9,6 @@ var shopUri = [
     'https://i.pinimg.com/originals/8b/52/0c/8b520ccac4a4372d62d33770ece3c529.jpg'
 ];
 
-
 export class FoodOrderScreen extends React.Component {
     constructor(props) {
         super(props);
@@ -221,12 +220,12 @@ export class FoodOrderScreen extends React.Component {
                     <TouchableOpacity style={styles.quantityBtn} onPress={() => { this.removeQuantity() }}>
                         <Ionicons name='remove-outline' size={30} style={styles.iconDetail} />
                     </TouchableOpacity>
-                    <TouchableOpacity style={[styles.orderBtn]} >
+                    <TouchableOpacity style={[styles.orderBtn]}>
                         <Text style={{ fontFamily: 'Kanit-Regular' }}>เพิ่มไปยังตะกร้า x {this.state.quantity}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.quantityBtn} onPress={() => { this.addQuantity() }}>
                         <Ionicons name="add-outline" size={30} style={styles.iconDetail} />
-                        
+
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>

@@ -145,14 +145,11 @@ const HomeStackScreen = ({navigation}) => {
         })}
       />
       <HomeStack.Screen 
-        name="CardItemDetails"
+        name="Menu"
         component={CardItemDetails}
         options={({route}) => ({
-          // title: route.params.title,
-          headerBackTitleVisible: false,
-          headerTitle: false,
-          headerTransparent: true,
-          headerTintColor: '#fff'
+          title: route.params.title,
+          headerBackTitleVisible: false
         })}
       />
       <HomeStack.Screen 

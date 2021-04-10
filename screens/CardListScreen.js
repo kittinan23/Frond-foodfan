@@ -9,7 +9,7 @@ const CardListScreen = ({navigation}) => {
         return (
             <Card 
                 itemData={item}
-                onPress={()=> navigation.navigate('CardItemDetails', {itemData: item})}
+                onPress={()=> navigation.navigate('Menu', {itemData: item})}
             />
         );
     };
